@@ -23,8 +23,8 @@ do
     switch_proxy
     break
   else
-    echo "> Health check의 응답을 알 수 없거나 혹은 실행 상태가 아닙니다."
-    echo "> Health check: ${RESPONSE}"
+    echo "> Health Check의 응답을 알 수 없거나 혹은 실행 상태가 아닙니다."
+    echo "> Health Check: ${RESPONSE}"
   fi
 
   if [ ${RETRY_COUNT} -eq 10 ]
