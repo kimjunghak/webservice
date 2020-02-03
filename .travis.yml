@@ -17,7 +17,7 @@ cache:
 before_deploy:
   - zip -r webservice *
   - mkdir -p deploy
-  - mv webservice.zip deploly/webservice.zip
+  - mv webservice.zip deploy/webservice.zip
 
 deploy:
   - provider: s3
