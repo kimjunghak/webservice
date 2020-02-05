@@ -4,11 +4,7 @@ jdk:
 
 branches:
   only:
-    -master
-
-git:
-  depth: 25
-  quiet: true
+    - master
 
 # Travis CI 서버의 Home
 cache:
