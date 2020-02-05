@@ -6,6 +6,9 @@ branches:
   only:
     -master
 
+install:
+  - git clone https://github.com/kimjunghak/webservice.git
+
 # Travis CI 서버의 Home
 cache:
   directories:
