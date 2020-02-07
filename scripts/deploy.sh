@@ -27,4 +27,7 @@ echo "> $JAR_NAME 에 실행권한 추가"
 chmod +x $JAR_NAME
 
 echo "> $JAR_NAME 실행"
-"deploy.sh" 34L, 981C                                                                                                                                    21,1       꼭대기
+nohup java -jar \
+        -Dspring.config.location=classpath:/application.properties,/home/ec2-user/app/application-oauth.properties,/home/ec2-user/app/application-real-db.properties \
+        -Dspring.profiles.active=real \
+        $REPOSITORY/$JAR_NAME 2>&1 &
